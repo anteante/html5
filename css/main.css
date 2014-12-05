@@ -4,7 +4,8 @@
 body {
 	background: #fff;
 	color: #000;
-	font: 18px/21px sans-serif;
+	font-size: 1em; /* default: 16px = 1em */
+	font-family: sans-serif;
 	letter-spacing: 0;
 	font-weight: normal;
 	}
@@ -12,6 +13,11 @@ body {
 a 	{
 	color: blue;
 	}
+
+img {
+	max-width: 100%;
+	display: block;
+}
 
 #wrap {
 	margin: 0 auto;
