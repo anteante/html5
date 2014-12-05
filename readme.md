@@ -1,5 +1,5 @@
 # html5-boilerplate
-Kickstart for HTML development
+HTML5 Kickstart
 
 Changelog:
 
