@@ -1,0 +1,41 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+body {
+	background: #fff;
+	color: #000;
+	font: 18px/21px sans-serif;
+	letter-spacing: 0;
+	font-weight: normal;
+	}
+
+a 	{
+	color: blue;
+	}
+
+#wrap {
+	margin: 0 auto;
+	width: 100%;
+}
+
+/* nav */
+
+nav {
+
+}
+
+/* main */
+
+#main {
+
+}
+
+/* footer */
+
+footer {
+	
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 640px) {}
