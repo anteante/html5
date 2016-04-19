@@ -1,0 +1,28 @@
+html {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	background-color: $bg-color
+	color: $primary-color;
+	font-family: $font-regular;
+	font-size: 1em; /* default: 16px = 1em */
+	font-weight: normal;
+	letter-spacing: 0;
+	}
+
+a 	{
+	color: blue;
+	}
+
+img {
+	max-width: 100%;
+	display: block;
+}
