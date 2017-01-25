@@ -10,19 +10,36 @@ html {
 }
 
 body {
-	background-color: $bg-color;
-	color: $primary-color;
-	font-family: $font-regular;
+	background-color: $background;
+	color: $primary;
+	font-family: $font-stack;
 	font-size: 1em; /* default: 16px = 1em */
 	font-weight: normal;
 	letter-spacing: 0;
 	}
 
 a 	{
-	color: blue;
+	color: $link;
 	}
 
 img {
 	max-width: 100%;
 	display: block;
+}
+
+#logo {
+    text-indent: -9999em;
+    display: block;
+    width: 100px;
+    position: fixed;
+    a {
+      display: block;
+      width: 60px;
+      height: 60px;
+      margin: 20px;
+      background: url("/assets/elements/logo.png") 0 0 no-repeat;
+      background: url("/assets/elements/logo.svg") 0 0 no-repeat,
+        linear-gradient(transparent, transparent);
+        &:hover { @include opacity(.7); }
+    }
 }

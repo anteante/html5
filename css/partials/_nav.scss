@@ -1,0 +1,138 @@
+.menu-wrap {
+  float: left;
+  width: calc(100% + 40px);
+	height: 100px;
+	margin: 0 -20px;
+	@include box-shadow(0, 1px, 10px, rgba(0, 0, 0, 0.25));
+}
+
+
+// MAIN NAV
+
+a.menu-link {
+    text-indent: -9999em;
+    float: right;
+    display: block;
+    width: 40px;
+    height: 30px;
+    background: url("/assets/elements/menu_icon.svg") 0 0 no-repeat;
+    position: relative;
+    top: 35px;
+    right: 15px;
+}
+
+// GENERAL
+
+nav#main[role=navigation] li {
+  flex-grow: 1;
+  font-family: $font-stack;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  a {
+      display: block;
+      color: $primary;
+      @include transition(all .3s ease);
+  }
+
+}
+
+nav#main[role=navigation] {
+  clear: both;
+  width: 100%;
+}
+
+nav#main[role=navigation] li.current a,
+nav#main[role=navigation] li a:hover {
+  @include opacity(.7);
+}
+
+
+// MOBILE
+
+@media screen and (max-width: 819px) {
+  .js nav#main[role=navigation] {
+    overflow: hidden;
+    max-height: 0;
+  }
+
+  nav#main[role=navigation] {
+    position: relative;
+    top: 70px;
+    background: #fff;
+    z-index: 99;
+  }
+
+  nav#main[role=navigation].active {
+    max-height: 24em;
+  }
+
+  nav#main[role=navigation] ul {
+    text-align: center;
+    border-top: 1px solid $light;
+  }
+
+  nav#main[role=navigation] li {
+    border-bottom: 1px solid $light;
+  }
+
+  nav#main[role=navigation] li a {
+    padding: 2em 0;
+  }
+
+  nav#main[role=navigation] li.current a,
+  nav#main[role=navigation] li a:hover {
+    background: $light;
+  }
+}
+
+// DESKTOP
+
+@media screen and (min-width: 820px) {
+
+  a.menu-link {
+     display: none;
+     height: 0;
+  }
+
+  nav#main[role=navigation] {
+    margin: 40px 0;
+  }
+
+  nav#main[role=navigation] ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav#main[role=navigation] li {
+    display: inline-block;
+    text-align: center;
+    margin: 0 0.5em;
+  }
+}
+
+
+// FOOTER
+
+footer {
+  border-top: 1px solid $light;
+  padding: 2em 0;
+  margin-top: 8em;
+  ul {
+    list-style: none;
+    margin: 0;
+    text-align: center;
+  }
+  li {
+    display: inline;
+    margin: 0 1em;
+    font-family: $font-stack;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    a {
+      color: lighten($primary, 50%);
+      text-transform: uppercase;
+    }
+  }
+}
