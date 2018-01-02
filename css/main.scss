@@ -2,8 +2,13 @@
 @import "modules/mixins";
 
 @import "partials/normalize";
+@import "partials/resets";
 
 @import "partials/base";
+@import "partials/logo";
 @import "partials/fonts";
+@import "partials/typography";
+
 @import "partials/layout";
 @import "partials/nav";
+@import "partials/footer";
