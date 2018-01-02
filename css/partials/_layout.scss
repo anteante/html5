@@ -1,7 +1,7 @@
 #wrap {
-	margin: 0 auto;
+  margin: 0 auto;
   padding: 0 20px;
-	width: 100%;
+  width: 100%;
 }
 
 .outer {
@@ -16,16 +16,16 @@
 }
 
 @media screen and (max-width: 819px) {
-	.outer {
-	  min-width: auto;
-	}
-	.inner {
-		width: auto;
-		min-width: auto;
-	}
+  .outer {
+    min-width: auto;
+  }
+  .inner {
+    width: auto;
+    min-width: auto;
+  }
 }
 
 #content {
-	clear: both;
-	padding: 4em 0;
+  clear: both;
+  padding: 4em 0;
 }

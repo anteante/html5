@@ -3,11 +3,12 @@
   display: block;
   width: 100px;
   position: fixed;
+  top: 20px;
+  left: 20px;
   a {
     display: block;
     width: 60px;
     height: 60px;
-    margin-left: 20px;
     background: url("/assets/elements/logo.png") 0 0 no-repeat;
     background: url("/assets/elements/logo.svg") 0 0 no-repeat,
       linear-gradient(transparent, transparent);
