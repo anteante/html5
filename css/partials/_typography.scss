@@ -1,16 +1,115 @@
-h1, h2, h3, h4, h5 {
-	font-family: $font-bold;
+/*! Typebase.less v0.1.0 | MIT License */
+
+/* Setup */
+html {
+  font-size: 125%;
+  -webkit-font-smoothing: antialiased;
+  text-align: left;
+}
+/* Copy & Lists */
+p {
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
-p {
-	font-family: $font-regular;
-	font-size: 1.125em;
-	line-height: 1.5;
-	margin: 0 0 1em 0;
+ul li,
+ol li {
+  line-height: 1.5rem;
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+blockquote {
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  line-height: 1.5rem;
+  text-align: center;
+}
+h1 {
+  font-size: 4.242rem;
+  line-height: 4.5rem;
+  margin-top: 3rem;
+}
+h2 {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  margin-top: 3rem;
+  color: $secondary;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+h3 {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+h4 {
+  font-size: .8rem;
+  font-weight: normal;
+  margin-top: 0rem;
+}
+h5 {
+  font-size: 1rem;
+  font-family: $header;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: $secondary;
+  letter-spacing: 0.25rem;
+}
+
+/* Tables */
+table {
+  margin-top: 1.5rem;
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0;
+  line-height: 33px;
+}
+/* Code blocks */
+code {
+  vertical-align: bottom;
+}
+/* Leading paragraph text */
+.lead {
+  font-size: 1.414rem;
+}
+/* Hug the block above you */
+.hug {
+  margin-top: 0;
+}
+
+.cap {
+  text-transform: capitalize;
+}
+.smallprint {
+  font-size: .8rem;
+  line-height: 1.5;
 }
 
 strong {
-	font-family: $font-bold;
+  font-weight: bold;
 }
-
-
