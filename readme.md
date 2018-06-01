@@ -3,6 +3,10 @@ HTML5 Kickstart
 
 Changelog:
 
+## 2018-06-01
+
+- restructure asset folder
+
 ## 2016-04-19
 
 - switched to Sass
@@ -19,6 +23,6 @@ Changelog:
 ### css
 
 - html5 elements in index.html (nav, article, footer)
-- adjusted reset.css 
+- adjusted reset.css
 - added print styles as @media query in reset.css
 - body font size: 1em
