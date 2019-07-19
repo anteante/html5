@@ -1,10 +1,11 @@
 header {
-  margin: 20px 0;
+  margin: 1.5rem 0;
 }
 
 // general
 
 .mainnav {
+  font-size: 1.5rem;
 
   li {
     font-family: $font;
@@ -30,17 +31,14 @@ header {
 
 .mainnav__home {
   display: inline;
-  font-size: 1rem;
+  font-size: 1.5rem;
 
   a {
     text-decoration: none;
   }
 }
 
-
-
 // mobile
-
 
 @media screen and (max-width: 640px) {
 
@@ -48,10 +46,6 @@ header {
     position: absolute;
     right: 20px;
     z-index: 2;
-
-    &:hover {
-      border-bottom: 1px solid;
-    }
   }
 
   .mainnav {
