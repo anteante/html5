@@ -1,7 +1,13 @@
-# html5-boilerplate
-HTML5 Kickstart
+# HTML5 Kickstart
+
+HTML / SASS Boilerplate
 
 Changelog:
+
+## 2019-07-19
+
+- restructure & simplify project
+- add hamburgers
 
 ## 2018-06-01
 
@@ -11,7 +17,6 @@ Changelog:
 
 - switched to Sass
 - created Sass partials
-
 
 ## 2015-12-05
 
