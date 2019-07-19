@@ -6,34 +6,52 @@ html {
   -webkit-font-smoothing: antialiased;
   text-align: left;
 }
+
 /* Copy & Lists */
+
 p {
-  line-height: 1.5rem;
-  margin-top: 1.5rem;
-  margin-bottom: 0;
+  line-height: 1.5;
+  margin: 1.5rem 0 0 0;
 }
+
 ul,
 ol {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin: 1.5rem 0;
 }
 
 ul li,
 ol li {
-  line-height: 1.5rem;
+  line-height: 1.5;
 }
+
 ul ul,
 ol ul,
 ul ol,
 ol ol {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
+
+nav ul {
+  list-style: none;
+  padding: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
 blockquote {
-  line-height: 1.5rem;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  margin: 1.5rem 0;
 }
+
 /* Headings */
 h1,
 h2,
@@ -42,46 +60,52 @@ h4,
 h5,
 h6 {
   font-family: $header;
-  margin-top: 1.5rem;
-  margin-bottom: 0;
+  margin: 1.5rem 0 0 0;
   line-height: 1;
-  text-align: center;
 }
+
 h1 {
   font-size: 3rem;
   margin-top: 3rem;
 }
+
 h2 {
   font-size: 2rem;
   line-height: 2rem;
   margin-top: 3rem;
 }
+
 h3 {
   font-size: 1.5rem;
 }
-h4, h5 {
+
+h4 {
   font-size: 1rem;
 }
 
 /* Tables */
+
 table {
-  margin-top: 1.5rem;
-  border-spacing: 0px;
+  margin: 1.5rem 0 0 0;
+  border-spacing: 0;
   border-collapse: collapse;
 }
+
 table td,
 table th {
   padding: 0;
-  line-height: 33px;
 }
+
 /* Code blocks */
 code {
   vertical-align: bottom;
 }
+
 /* Leading paragraph text */
 .lead {
-  font-size: 1.414rem;
+  font-size: 1.5rem;
 }
+
 /* Hug the block above you */
 .hug {
   margin-top: 0;
@@ -90,6 +114,7 @@ code {
 .cap {
   text-transform: capitalize;
 }
+
 .smallprint {
   font-size: .8rem;
   line-height: 1.5;

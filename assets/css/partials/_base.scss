@@ -1,29 +1,35 @@
-html {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  text-rendering: optimizeLegibility;
+// Set box-sizing 
+*,
+*:after,
+*:before {
+  box-sizing: inherit
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+html,
+body {
+  height: 100%;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 body {
-  background-color: $background;
-  color: $primary;
+  color: $prim;
   font-family: $font;
-  font-size: 1em; /* default: 16px = 1em */
+  font-size: 1rem;
   font-weight: normal;
   letter-spacing: 0;
-  }
+}
 
 a {
-  color: $link;
+  color: $prim;
   text-decoration: none;
-  }
 
-img {
-  max-width: 100%;
-  display: block;
+  &:focus,
+  &:hover {
+    outline: none;
+    color: $seco;
+  }
 }
